@@ -14,7 +14,7 @@ if tiep_tuc == "Có":
         
         if st.button("Xác nhận"):
             if diem_cao_nhat < 8:
-                st.warning("Mày quá gà, lêu lêu không nên thích môn học này!")
+                st.warning("Mày quá gà, lêu lêu mày không nên thích môn học này, đồ gà!")
             else:
                 st.success("Giỏi dữ, mày rất có tố chất để học môn này!")
             st.info("Cảm ơn vì mày đã chia sẻ!")
