@@ -78,7 +78,7 @@ if tiep_tuc == "có":
                     #   -> Ghi nối tiếp vào cuối file (dùng mode='a', header=False)
 
      # --- ĐẶT SÁT LỀ TRÁI NGUYÊN KHỐI NÀY ---
-     st.write("---")
+     st.write("-")
 
      st.subheader("📊 Danh sách kết quả đã ghi nhận:")
 
