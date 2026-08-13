@@ -78,7 +78,7 @@ if tiep_tuc == "có":
                     #   -> Ghi nối tiếp vào cuối file (dùng mode='a', header=False)
 
      # --- Hiển thị danh sách đã khảo sát ---
-     st.write("---")
+     st.write("Tổng hợp")
      st.subheader("📊 Danh sách kết quả đã ghi nhận:")
      if os.path.exists(FILE_DATA)
          ds_khen = pd.read_csv(FILE_DATA)
