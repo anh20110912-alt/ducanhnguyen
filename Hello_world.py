@@ -78,11 +78,14 @@ if tiep_tuc == "có":
                     #   -> Ghi nối tiếp vào cuối file (dùng mode='a', header=False)
 
      # --- Hiển thị danh sách đã khảo sát ---
-     st.write("Tổng hợp")
+     st.write("---")
+
      st.subheader("📊 Danh sách kết quả đã ghi nhận:")
-     if os.path.exists(FILE_DATA)
-         ds_khen = pd.read_csv(FILE_DATA)
-         st.dataframe(df_khen) # Hiện bằng dữ liệu đẹp mắt ra màn hình
+
+     # Kiểm tra nếu file đã tồn tại thì đọc và hiện ra bảng
+     if os.path.exists(FILE_DATA):
+         doc_file = pd.read_csv(FILE_DATA)
+         st.dataframe(doc_file)
      else:
          st.write("Chưa có dữ liệu nào được lưu.")
          
