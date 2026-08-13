@@ -77,15 +77,5 @@ if tiep_tuc == "có":
                     # Ngược lại (file ĐÃ tồn tại):
                     #   -> Ghi nối tiếp vào cuối file (dùng mode='a', header=False)
 
-
-     st.subheader("📊 Danh sách kết quả đã ghi nhận:")
-
-     # Kiểm tra nếu file đã tồn tại thì đọc và hiện ra bảng
-     if os.path.exists(FILE_DATA):
-         doc_file = pd.read_csv(FILE_DATA)
-         st.dataframe(doc_file)
-     else:
-         st.write("Chưa có dữ liệu nào được lưu.")
-         
 elif tiep_tuc == "không":
     st.write("Biến!")
