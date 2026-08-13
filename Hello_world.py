@@ -64,5 +64,27 @@ if tiep_tuc == "có":
 
                     st.info("Cảm ơn vì mày đã chia sẻ")
 
+                    # 1. Gom dữ liệu lại thành 1 dòng bảng
+                    du_lieu_moi = pd.DataFrame([{
+                        "Lớp": ...,           # <--- Điền tên biến chứa Lớp của cậu vào đây
+                        "Môn yêu thích": ..., # <--- Điền tên biến chứa Môn học vào đây
+                        "Điểm cao nhất": ...  # <--- Điền tên biến chứa Điểm vào đây
+                    }])
+
+                    # 2. Kiểm tra và lưu file:
+                    # Nếu FILE_DATA CHƯA tồn tại (dùng os.path.exists):
+                    #   -> Lưu file mới có cả cột tiêu đề (du_lieu_moi.to_csv(FILE_DATA, index=False))
+                    # Ngược lại (file ĐÃ tồn tại):
+                    #   -> Ghi nối tiếp vào cuối file (dùng mode='a', header=False)
+
+     # --- Hiển thị danh sách đã khảo sát ---
+     st.write("---")
+     st.subheader("📊 Danh sách kết quả đã ghi nhận:")
+     if os.path.exists(FILE_DATA)
+         ds_khen = pd.read_csv(FILE_DATA)
+         st.dataframe(df_khen) # Hiện bằng dữ liệu đẹp mắt ra màn hình
+     else:
+         st.write("Chưa có dữ liệu nào được lưu.")
+         
 elif tiep_tuc == "không":
     st.write("Biến!")
