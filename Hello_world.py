@@ -61,4 +61,4 @@ if tiep_tuc == "có":
                     st.info("Cảm ơn vì mày đã chia sẻ")
 
 elif tiep_tuc == "không":
-    st.write("Vậy thôi tạm biệt mày nhé, khi nào rảnh quay lại!")
+    st.write("Biến!")
