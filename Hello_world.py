@@ -1,4 +1,8 @@
 import streamlit as st
+import pandas as pd 
+import os 
+
+FILE_DATA = "danh_sach_khao_sat.csv"
 
 # Tiêu đề trang web
 st.title("Xin chào mày đến với ĐỨC ANH HOME")
