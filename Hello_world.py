@@ -52,12 +52,6 @@ if tiep_tuc == "có":
 
             # Chỉ khi ĐÃ NHẬP ĐIỂM xong mới hiện Nút Xác Nhận
             if diem is not None:
-                if st.button("Xác nhận"):
-                    st.write("---")
-                    st.write(f"📌 Đang học: **{lop}**")
-                    st.write(f"📌 Môn yêu thích: **{mon_hoc}**")
-                    st.write(f"📌 Điểm số cao nhất: **{diem}**")
-
                     # Đánh giá điểm số
                     if diem < 8.0:
                         st.error("mày nên từ bỏ môn này đi, đồ gà!")
