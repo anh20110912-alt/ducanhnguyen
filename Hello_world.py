@@ -77,7 +77,7 @@ if tiep_tuc == "có":
                     # Ngược lại (file ĐÃ tồn tại):
                     #   -> Ghi nối tiếp vào cuối file (dùng mode='a', header=False)
 
-     # --- Hiển thị danh sách đã khảo sát ---
+     # --- ĐẶT SÁT LỀ TRÁI NGUYÊN KHỐI NÀY ---
      st.write("---")
 
      st.subheader("📊 Danh sách kết quả đã ghi nhận:")
